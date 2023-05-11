@@ -5,6 +5,7 @@ export default function Navbar() {
       <div className="navbar-start">
         <a className="text-xl normal-case btn btn-ghost">Keith Brown DDS</a>
       </div>
+
       <div className="hidden navbar-center lg:flex">
         <ul className="px-1 menu menu-horizontal">
           <li>
@@ -22,8 +23,9 @@ export default function Navbar() {
           <li>
             <Link href="/faqs">FAQs</Link>
           </li>
-          <li tabIndex={0}>
-            <a>
+
+          <li className="dropdown dropdown-content ">
+            <a tabIndex={0}>
               Services
               <svg
                 className="fill-current"
@@ -35,7 +37,7 @@ export default function Navbar() {
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
             </a>
-            <ul className="p-2">
+            <ul className="p-2 mt-0 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
               <li>
                 <Link href="/services">General Dentistry</Link>
               </li>
@@ -72,22 +74,22 @@ export default function Navbar() {
             className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="/">Financing</Link>
+              <Link href="/financing">Financing</Link>
             </li>
             <li>
-              <Link href="/">Location</Link>
+              <Link href="/location">Location</Link>
             </li>
             <li>
-              <Link href="/">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
             <li>
-              <Link href="/">FAQs</Link>
+              <Link href="/faqs">FAQs</Link>
             </li>
             <li>
-              <Link href="/">Services</Link>
+              <Link href="/dental-services">Services</Link>
             </li>
           </ul>
         </div>
